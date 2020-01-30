@@ -3,6 +3,8 @@ let g = 0;
 let b = 255;
 let triY;
 let triX;
+let mouseDist;
+let pointX;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,7 +18,19 @@ function draw() {
   r = map (mouseY, 0, windowHeight, 0, 255);
   background(r,g,b);
   
+  
+  mouseDist = dist(mouseX, mouseY, pmouseX, pmouseY);
+ print(mouseDist);
+ smooth();
+  //line and point styles
+  strokeWeight(50);
+  //point expects an x and y coordinate
+  point(pointX, 300);
 
+  strokeWeight(mouseDist);
+  //line expects two x, y coordinates
+  //then conects the coordinates
+  line(mouseX, mouseY, pmouseX, pmouseY);
 
 
   fill(200);
