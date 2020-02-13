@@ -50,11 +50,11 @@ function setup() {
 
 function draw() {
 
-  image(flower,100, 600 , flower.width/12, flower.width/12);
-  image(butterfly,230, 600, butterfly.width/8, butterfly.height/8);
-  image(bird,360, 600, bird.width/10, bird.height/10);
-  image(dragon,490, 600, dragon.width/11.5, dragon.height/11.5);
-  image(bamboo,620, 600, bamboo.width/10, dragon.height/10);
+  image(flower,100, 650 , flower.width/12, flower.width/12);
+  image(butterfly,230, 650, butterfly.width/8, butterfly.height/8);
+  image(bird,360, 650, bird.width/10, bird.height/10);
+  image(dragon,490, 650, dragon.width/11.5, dragon.height/11.5);
+  image(bamboo,620, 650, bamboo.width/10, dragon.height/10);
 
  //  if (flowerbrushBool == true){
  //    //flowerbrush
@@ -182,7 +182,7 @@ function dragonBrush(){
 
 function butterflyBrush(){
 
-  image(butterfly, mouseX, mouseY, butterfly.width/5, butterfly.height/5);
+  image(butterfly, mouseX, mouseY, butterfly.width/6, butterfly.height/6);
 }
 
 
