@@ -96,7 +96,7 @@ function mousePressed(){
     butterflyBrush();
   }
 
-  if( dist(mouseX, mouseY, dX, dY) < 30){
+  if( dist(mouseX, mouseY, dX, dY) < 50){
     flowerbrushBool = false;
     dragonbrushBool = true;
     butterflybrushBool = false;
