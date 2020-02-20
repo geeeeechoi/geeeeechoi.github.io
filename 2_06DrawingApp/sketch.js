@@ -171,29 +171,40 @@ function mouseDragged(){
 function flowerBrush(){
   // fill(255, 0, 0);
   // ellipse(mouseX, mouseY, 20, 20);
+  if(dist(mouseX, mouseY, flX, flY) > 50){
   image(flower, mouseX, mouseY, flower.width/10, flower.width/10);
+  }
+ 
 
 }
 
 function dragonBrush(){
 
+ if(dist(mouseX, mouseY, dX, dY) > 50){
   image(dragon, mouseX, mouseY, dragon.width/8.5, dragon.height/8.5);
+  }
 }
 
 function butterflyBrush(){
 
+  if(dist(mouseX, mouseY, btfX, btfY) > 50){
   image(butterfly, mouseX, mouseY, butterfly.width/6, butterfly.height/6);
+  }
 }
 
 
 function birdBrush(){
 
+if(dist(mouseX, mouseY, bX, bY) > 50){
   image(bird, mouseX, mouseY, bird.width/8, bird.height/8);
+  }
 }
 
 function bambooBrush(){
 
+  if(dist(mouseX, mouseY, bbX, bbY) > 50){
   image(bamboo, mouseX, mouseY, bamboo.width/2, bamboo.height/2);
+  }
 }
 
 function keyTyped(){
