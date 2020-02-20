@@ -11,8 +11,8 @@ let butterflybrushBool = false;
 let birdbrushBool = false;
 let bamboobrushBool = false;
 
-redX = 40;
-redY = 40;
+// redX = 40;
+// redY = 40;
 
 flX = 100;
 flY = 650;
@@ -50,11 +50,14 @@ function setup() {
 
 function draw() {
 
+  // noStroke();
+  // rect(0, height-50, width, 100);
   image(flower,100, 650 , flower.width/12, flower.width/12);
   image(butterfly,230, 650, butterfly.width/8, butterfly.height/8);
   image(bird,360, 650, bird.width/10, bird.height/10);
   image(dragon,490, 650, dragon.width/11.5, dragon.height/11.5);
   image(bamboo,620, 650, bamboo.width/10, dragon.height/10);
+
 
  //  if (flowerbrushBool == true){
  //    //flowerbrush
@@ -173,20 +176,17 @@ function flowerBrush(){
   // ellipse(mouseX, mouseY, 20, 20);
   if(mouseX > 0 && mouseY < 600){
   image(flower, mouseX, mouseY, flower.width/10, flower.width/10);
-  }
- 
+}
 
 }
 
 function dragonBrush(){
-
- if(mouseX > 0 && mouseY < 600){
+  if(mouseX > 0 && mouseY < 600){
   image(dragon, mouseX, mouseY, dragon.width/8.5, dragon.height/8.5);
   }
 }
 
 function butterflyBrush(){
-
   if(mouseX > 0 && mouseY < 600){
   image(butterfly, mouseX, mouseY, butterfly.width/6, butterfly.height/6);
   }
@@ -194,14 +194,12 @@ function butterflyBrush(){
 
 
 function birdBrush(){
-
-if(mouseX > 0 && mouseY < 600){
+  if(mouseX > 0 && mouseY < 600){
   image(bird, mouseX, mouseY, bird.width/8, bird.height/8);
   }
 }
 
 function bambooBrush(){
-
   if(mouseX > 0 && mouseY < 600){
   image(bamboo, mouseX, mouseY, bamboo.width/2, bamboo.height/2);
   }
